@@ -1,0 +1,24 @@
+.headerContainer {
+    height: 80px;
+    background: #0C8AFF;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.arrSize {
+    width: 150px;
+    height: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.arrSize:focus {
+    outline: none;
+}
+
+.selectArrSize {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}

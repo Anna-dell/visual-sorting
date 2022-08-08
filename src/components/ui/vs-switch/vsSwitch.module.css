@@ -1,0 +1,121 @@
+.toggleSwitch {
+    position: relative;
+    margin-right: 10px;
+    width: 75px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    text-align: left;
+}
+
+.toggleSwitchCheckbox {
+    display: none;
+}
+
+.toggleSwitchLabel {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbbbbb;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.toggleSwitchCheckbox:focus {
+    outline: none;
+}
+
+.toggleSwitchCheckbox > span {
+    box-shadow: 0 0 2px 5px red;
+}
+
+.toggleSwitchCheckbox > span:focus {
+    outline: none;
+}
+
+.toggleSwitchInner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.toggleSwitchInner::before, .toggleSwitchInner::after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 34px;
+    padding: 0;
+    line-height: 34px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.toggleSwitchInner::before {
+    content: attr(data-yes);
+    text-transform: uppercase;
+    padding-left: 10px;
+    background-color: #2F855A;
+    color: #ffffff;
+}
+
+.toggleSwitchDisabled {
+    background-color: #dddddd;
+    cursor: not-allowed;
+}
+
+.toggleSwitchDisabled::before {
+    background-color: #dddddd;
+    cursor: not-allowed;
+}
+
+.toggleSwitchInner::after {
+    content: attr(data-no);
+    text-transform: uppercase;
+    padding-right: 10px;
+    background-color: #bbbbbb;
+    color: #ffffff;
+    text-align: right;
+}
+
+.toggleSwitchSwitch {
+    display: block;
+    width: 24px;
+    margin: 5px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    border: 0 solid #bbbbbb;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.toggleSwitchInner {
+    margin-left: 0;
+}
+.toggleSwitchSwitch {
+    right: 0;
+}
+
+.smallSwitch {
+    width: 40px;
+}
+
+.toggleSwitchInner::after, .toggleSwitchInner::before {
+    content: "";
+    height: 20px;
+    line-height: 20px;
+}
+
+.toggleSwitchSwitch {
+    width: 16px;
+    right: 20px;
+    margin: 2px;
+}
